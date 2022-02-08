@@ -1,0 +1,13 @@
+{
+    "name": "vb/composer_demo",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vegh Barnabas",
+            "email": "ak3g4s@inf.elte.hu"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.19"
+    }
+}
