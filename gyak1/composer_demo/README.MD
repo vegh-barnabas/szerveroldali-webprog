@@ -1,4 +1,4 @@
-[parancs - magyarázat]
+# [parancs - magyarázat]
 
 composer install - projekt felállítása, dependenciák letöltése (jelen esetben faker)
 
