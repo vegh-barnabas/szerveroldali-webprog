@@ -7,6 +7,7 @@
 
 # konzolra kiírás
 $console = new \Symfony\Component\Console\Output\ConsoleOutput();
+
 $console->writeln("Something");
 
 # kontrollerek létrehozása
@@ -20,6 +21,7 @@ php artisan tinker
 
 # adatbázishoz kötés
 config/database.php
+
 	DB_CONNECTION=sqlite
 	DB_DATABASE=database/database.sqlite
 
