@@ -1,4 +1,4 @@
-#parancsok
+# parancsok
 php artisan migrate:fresh
 
 - friss migráció
