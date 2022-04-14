@@ -1,0 +1,17 @@
+{
+  "name": "szerveroldali_gy8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cowsay": "^1.5.0",
+    "date-and-time": "^2.3.0",
+    "jimp": "^0.16.1",
+    "sqlite3": "^5.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
