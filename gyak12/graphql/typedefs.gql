@@ -1,0 +1,72 @@
+type Query {
+  helloWorld: String
+
+  helloName(name: String!): String
+
+  genres: [Genre]
+  genre(id: ID!): Genre
+
+  movies: [Movie]
+  movie(id: ID!): Movie
+
+  users: [User]
+  user(id: ID!): User
+
+  ratings: [Rating]
+  rating(id: ID!): Rating
+
+  top(limit: Int!): [Movie]
+}
+
+type Genre {
+  id: ID!
+  name: String!
+  description: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+
+  # Relációk
+  movies: [Movie]
+}
+
+type Movie {
+  id: ID!
+  title: String!
+  director: String
+  description: String
+  year: Int
+  length: Int
+  imageUrl: URL
+  createdAt: DateTime!
+  updatedAt: DateTime!
+
+  averageRating: Float
+
+  # Relációk
+  genres: [Genre]
+  ratings: [Rating]
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: EmailAddress!
+  isAdmin: Boolean!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+
+  # Relációk
+  ratings: [Rating]
+}
+
+type Rating {
+  id: ID!
+  rating: Int!
+  comment: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+
+  # Relációk
+  user: User!
+  movie: Movie!
+}
